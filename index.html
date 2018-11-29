@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>All My Children</title>
+		<link rel="stylesheet" href="index.css">
+		<meta charset="UTF-8">
+		<meta name="description" content="Free Web tutorials">
+		<meta name="family" content="HTML,CSS">
+		<meta name="author" content="Shakarra">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<header><h1>ALL MY CHILDREN</h1></header>
+		<div class="row">
+
+			  <div class="column">
+				  <a href= "Jada.html"> <img src="./images/Jada.JPG" width="100%" alt="my niece Jada"/> </a>
+				  <a href= "Jada.html"> <img src="./images/Jada2.JPG" width="100%" alt="my niece Jada"/> </a>
+				  <a href= "Jakalyn.html"> <img src="./images/Jakalyn.jpg" width="100%" alt="my niece Jakalyn"/> </a>
+				  <a href= "Jakalyn.html"> <img src="./images/Jakalyn2.JPG" width="100%" alt="my niece Jakalyn"/> </a>
+				  <a href= "Kiya.html"> <img src="./images/Kiya.JPG" width="100%" alt="my niece Kiya"/> </a>
+			  </div>
+
+				<div class="column">
+					<a href= "Kiya.html"> <img src="./images/Kiya2.JPG" width="100%" alt="my niece Kiya"/> </a>
+					<a href= "Jirah.html"> <img src="./images/Jirah.JPG" width="100%" alt="my niece Jirah"/> </a>
+					<a href= "Jalen.html"> <img src="./images/Jalen.JPG" width="100%" alt="my nephew Jalen"/> </a>
+					<a href= "Jirah.html"> <img src="./images/Jirah2.JPG" width="100%" alt="my niece Jirah"/> </a>
+					<a href= "Jalen.html"> <img src="./images/Jalen2.JPG" width="100%" alt="my nephew Jalen"/> </a>
+				</div>
+
+
+				<div class="column">
+					<a href= "Justin.html"> <img src="./images/Justin.jpeg" width="100%" alt="my nephew Justin"/> </a>
+					<a href= "Justin.html"> <img src="./images/Justin2.JPG" width="100%" alt="my nephew Justin"/> </a>
+					<a href= "Jordan.html"> <img src="./images/Jordan.JPG" width="100%" alt="my godson Jordan"/> </a>
+					<a href= "Valencia.html"> <img src="./images/Valencia2.JPG" width="100%" alt="my baby sister Valencia"/> </a>
+					<a href= "Jaelen.html"> <img src="./images/Jaelyn.JPG" width="100%" alt="my goddaughter Jaelen"/> </a>
+				</div>
+				<div class="column">
+					<a href= "Jaelen.html"> <img src="./images/Jaelyn2.JPG" width="100%" alt="my goddaughter Jaelen"/> </a>
+					<a href= "Talia.html"> <img src="./images/Talia.JPG" width="100%" alt="my goddaughter Talia"/> </a>
+					<a href= "Valencia.html"> <img src="./images/Valencia.JPG" width="100%" alt="my baby sister Valencia"/> </a>
+					<a href= "Talia.html"> <img src="./images/Talia2.JPG" width="100%" alt="my goddaughter Talia"/> </a>
+					<a href= "Jordan.html"> <img src="./images/Jordan.JPG" width="100%" alt="my godson Jordan"/> </a>
+				</div>
+
+
+
+		<div class="container" ng-app="CommentApp">
+    		<div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2 col-xs-12 commentBox">
+               <div ng-controller="PostController">
+               		<h4>Post Comment</h4>
+                    <form>
+                        <div class="input-group">
+                        	<span class="input-group-addon" id="basic-addon1">
+                            <img class="img-icon" src="./images/icon.jpg" />
+                            </span>
+                            <input type="text" ng-model='commentTxt' class="form-control" placeholder="Write a comment" >
+                        </div>
+                        <div class="btn-block text-right">
+                          <input class="btn btn-success" ng-click='submit()' type='submit' value='Submit'>
+                        </div>
+                    </form>
+
+                    <ul>
+                      <li ng-repeat='comment in comments track by $index'>
+                        <div class='comment'>
+                          <img class="img-icon" src="./images/icon.jpg" />
+                          <div class="com">
+                            <span><a href="javascript:void(0);">{{comment.name}}</a></span> {{comment.commentTxt}}
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+
+               </div>
+        	</div>
+    </div>
+
+	</body>
+</html>

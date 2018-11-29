@@ -1,0 +1,35 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url('fonts/waltograph42.otf');
+}
+header {
+    font-family: myFirstFont;
+    margin: 0 auto;
+		color: #2AB0E3;
+		font-size: 50px;
+}
+
+.center {
+  text-align: center;
+}
+
+.big{
+  width: 50%
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+}
+
+.column{
+  display:flex;
+  margin: 30px 10%;
+}
+
+footer {
+  font: "Lucida Grande";
+  font-size: 20px;
+  background-color: #2AB0E3;
+  color: white;
+}
